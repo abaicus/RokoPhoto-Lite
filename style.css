@@ -920,10 +920,9 @@ a.btn.pull-right:hover {
 .form-submit .submit {
 	font-family: 'Open Sans', "Trebuchet MS", Arial, sans-serif;
 	font-size: 16px;
-	width: 180px;
 	width: auto;
-    white-space: pre-wrap;
-    line-height: 1;
+    	white-space: pre-wrap;
+    	line-height: 1;
 	text-transform: uppercase;
 	border: 1px solid #000000;
 	color: #000000;
