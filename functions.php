@@ -177,17 +177,6 @@ function rokophotolite_customize_register($wp_customize) {
 		)
 	));
 
-	$wp_customize->add_setting( 'rokophotolite_vision_upsale', array(
-		'sanitize_callback' => 'rokophotolite_sanitize_pro_version',
-	) );
-	$wp_customize->add_control( new RokoPhoto_Text( $wp_customize, 'rokophotolite_vision_upsale',
-		array(
-			'section' => 'rokophotolite_subhead_section',
-			'priority' => 11,
-			'rokophoto_message' => __('Check out the <a href="https://themeisle.com/themes/rokophoto/">PRO version</a> add a Vision Slider on frontpage!','rokophotolite'),
-		)
-	));
-
 	$wp_customize->add_setting( 'rokophotolite_portfolio_upsale', array(
 		'sanitize_callback' => 'rokophotolite_sanitize_pro_version',
 	) );
@@ -196,28 +185,6 @@ function rokophotolite_customize_register($wp_customize) {
 			'section' => 'rokophotolite_subhead_section',
 			'priority' => 12,
 			'rokophoto_message' =>__('Check out the <a href="https://themeisle.com/themes/rokophoto/">PRO version</a> add a Portfolio section on frontpage!','rokophotolite'),
-		)
-	));
-
-	$wp_customize->add_setting( 'rokophotolite_ribbon_upsale', array(
-		'sanitize_callback' => 'rokophotolite_sanitize_pro_version',
-	) );
-	$wp_customize->add_control( new RokoPhoto_Text( $wp_customize, 'rokophotolite_ribbon_upsale',
-		array(
-			'section' => 'rokophotolite_subhead_section',
-			'priority' => 13,
-			'rokophoto_message' =>__('Check out the <a href="https://themeisle.com/themes/rokophoto/">PRO version</a> add a Ribbon section on frontpage!','rokophotolite'),
-		)
-	));
-
-	$wp_customize->add_setting( 'rokophotolite_aboutus_upsale', array(
-		'sanitize_callback' => 'rokophotolite_sanitize_pro_version',
-	) );
-	$wp_customize->add_control( new RokoPhoto_Text( $wp_customize, 'rokophotolite_aboutus_upsale',
-		array(
-			'section' => 'rokophotolite_subhead_section',
-			'priority' => 14,
-			'rokophoto_message' =>__('Check out the <a href="https://themeisle.com/themes/rokophoto/">PRO version</a> add an About us section on frontpage!','rokophotolite'),
 		)
 	));
 
