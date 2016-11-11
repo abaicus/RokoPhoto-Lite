@@ -53,7 +53,7 @@ final class Customizer_Info_Singleton {
 	private function setup_actions() {
 
 		// Register panels, sections, settings, controls, and partials.
-		add_action( 'customize_register', array( $this, 'sections' ), 1);
+		add_action( 'customize_register', array( $this, 'sections' ), 1 );
 
 		// Register scripts and styles for the controls.
 		add_action( 'customize_controls_enqueue_scripts', array( $this, 'enqueue_control_scripts' ), 0 );
@@ -76,9 +76,9 @@ final class Customizer_Info_Singleton {
 		$manager->register_section_type( 'Customizer_Info' );
 
 		$manager->add_section( new Customizer_Info( $manager, 'rokophoto_view_pro', array(
-			'section_title' => __('View PRO version', 'rokophotolite'),
+			'section_title' => __( 'View PRO version', 'rokophotolite' ),
 			'section_url' => 'https://themeisle.com/themes/rokophoto/',
-			'section_text' => __('Get it', 'rokophotolite')
+			'section_text' => __( 'Get it', 'rokophotolite' ),
 		) ) );
 	}
 
