@@ -90,10 +90,7 @@ final class Customizer_Info_Singleton {
 	 * @return void
 	 */
 	public function enqueue_control_scripts() {
-
 		wp_enqueue_script( 'customizer-info-js', trailingslashit( get_template_directory_uri() ) . 'inc/customizer-info/js/customizer-info-controls.js', array( 'customize-controls' ) );
-		wp_enqueue_style( 'customizer-info-style', trailingslashit( get_template_directory_uri() ) . 'inc/customizer-info/css/style.css');
-
 	}
 }
 

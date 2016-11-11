@@ -235,7 +235,7 @@ function rokophotolite_customize_register($wp_customize) {
 
 
 	$wp_customize->add_section('rockophoto_theme_info', array(
-			'title' => __('Theme info', 'oblique'),
+			'title' => __('Theme info', 'rokophotolite'),
 			'priority' => 0,
 		)
 	);
