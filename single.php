@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all single posts and attachments
+ *
+ * @package WordPress
+ * @subpackage RokoPhoto-Lite
+ */
+get_header(); ?>
 
 	<!-- Blog Posts
 	================================================== -->

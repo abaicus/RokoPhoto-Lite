@@ -1,3 +1,15 @@
+<?php
+/**
+ * Loop Meta Template
+ *
+ * Displays information at the top of the page about archive and search results when viewing those pages.
+ * This is not shown on the home page and singular views.
+ *
+ * @package WordPress
+ * @subpackage RokoPhoto-Lite
+ */
+?>
+
 <?php if ( is_home() ) : ?>
 
 		<h6><?php bloginfo( 'description' ); ?></h6>

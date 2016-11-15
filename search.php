@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying search results pages
+ *
+ * @package WordPress
+ * @subpackage RokoPhoto-Lite
+ */
+get_header(); ?>
 	
 	<!-- Blog Posts
 	================================================== -->
