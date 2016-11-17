@@ -1,6 +1,6 @@
 <?php
 /**
- * Themotion functions and definitions.
+ * RokoPhoto Lite functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
