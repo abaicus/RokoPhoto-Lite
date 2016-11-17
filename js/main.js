@@ -1,9 +1,7 @@
-// Hello.
-//
-// This is The Scripts used for Awesome Photography/Portfolio Template
-//
-//
-
+/**
+ * This is The Scripts used for Awesome Photography/Portfolio Template
+ */
+/* global WOW */
 function main() {
 
 (function () {
@@ -17,16 +15,18 @@ function main() {
         jQuery('body').delay(350).css({'overflow':'visible'});
       });
       //]]>
-      
-   // Contact form toggle hide/show
-	jQuery(document).ready(function(){
-      jQuery("#show").click(function(){
-        jQuery("#contact").slideToggle("slow,swing");
-      });
+
+    // Contact form toggle hide/show
+    jQuery(document).ready(function(){
+        jQuery('#show').click(function(){
+            jQuery('#contact').slideToggle('slow,swing');
+        });
     });
 
     // Wow animation
-      new WOW().init();
+    if (typeof WOW !== 'undefined' && jQuery.isFunction(WOW)) {
+        new WOW().init();
+    }
 
     // Header/Vision carousel slider
       jQuery('.carousel').carousel({
@@ -34,15 +34,15 @@ function main() {
       });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-      jQuery(function() {
-        jQuery('a.page-scroll').bind('click', function(event) {
-          var $anchor = $(this);
-          jQuery('html, body').stop().animate({
-            scrollTop: jQuery($anchor.attr('href')).offset().top
-            }, 1500, 'easeInOutExpo');
-          event.preventDefault();
+        jQuery(function($) {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
         });
-      });
 
     // Highlight the top nav as scrolling occurs
       jQuery('body').scrollspy({

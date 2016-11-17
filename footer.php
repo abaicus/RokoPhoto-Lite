@@ -1,8 +1,19 @@
-    <!-- About Section
-    ================================================== -->
-    <section id="bsocials">
-      <div class="container wow bounceIn" data-wow-delay="0.8s">
-        <?php
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after
+ *
+ * @package WordPress
+ * @subpackage RokoPhoto-Lite
+ */
+?>
+
+	<!-- About Section
+	================================================== -->
+	<section id="bsocials">
+	  <div class="container wow bounceIn" data-wow-delay="0.8s">
+		<?php
 		  $socialtext = get_theme_mod( 'rokophotolite_social_text', __( 'Follow Me', 'rokophotolite' ) );
 		  $sociallabel = get_theme_mod( 'rokophotolite_social_label', __( 'To get the latest update of me and my works', 'rokophotolite' ) );
 		if ( ! empty( $sociallabel ) ) {

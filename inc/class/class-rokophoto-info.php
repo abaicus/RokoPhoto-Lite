@@ -1,15 +1,30 @@
 <?php
+/**
+ * Class to display upsells.
+ *
+ * @package WordPress
+ * @subpackage RokoPhoto-Lite
+ */
+
 if ( ! class_exists( 'WP_Customize_Control' ) ) {
 	return;
 }
 
+/**
+ * Class RokoPhoto_Info
+ */
 class RokoPhoto_Info extends WP_Customize_Control {
 
+	/**
+	 * Enqueue required scripts and styles.
+	 */
 	public function enqueue() {
 		wp_enqueue_style( 'rokophoto-theme-info-control', get_template_directory_uri() . '/css/admin-style.css','1.0.0' );
 	}
 
-
+	/**
+	 * The render function for the controler
+	 */
 	public function render_content() {
 		$links = array(
 			array(

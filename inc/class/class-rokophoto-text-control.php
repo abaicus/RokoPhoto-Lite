@@ -1,6 +1,30 @@
 <?php
+/**
+ * Class for messages controls in customizer
+ *
+ * @package WordPress
+ * @subpackage RokoPhoto-Lite
+ */
+
+/**
+ * Class RokoPhoto_Info
+ */
 class RokoPhoto_Text extends WP_Customize_Control {
+
+	/**
+	 * The message to display in the controler
+	 *
+	 * @var string $message The message to display in the controler
+	 */
 	private $message = '';
+
+	/**
+	 * RokoPhoto_Text constructor.
+	 *
+	 * @param string  $manager Manager.
+	 * @param integer $id Id.
+	 * @param array   $args Array of arguments.
+	 */
 	public function __construct( $manager, $id, $args = array() ) {
 		parent::__construct( $manager, $id, $args );
 		if ( ! empty( $args['rokophoto_message'] ) ) {
@@ -8,6 +32,9 @@ class RokoPhoto_Text extends WP_Customize_Control {
 		}
 	}
 
+	/**
+	 * The render function for the controler
+	 */
 	public function render_content() {
 		echo $this->message;
 	}
