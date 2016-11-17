@@ -5,7 +5,7 @@ Author: ThemeIsle
 Author URI: https://themeisle.com
 Description: RokoPhoto Lite is an elegant WordPress theme for photographers, writers, and bloggers. This design focuses on your content and is perfect for an elegant blog site.
 Version: 1.1.5
-Tags: white, black, one-column, responsive-layout, custom-background, custom-header, custom-menu, featured-images, threaded-comments, translation-ready,photoblogging
+Tags: one-column, custom-background, custom-header, custom-menu, featured-images, threaded-comments, translation-ready
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rokophotolite
@@ -26,6 +26,15 @@ CSS Style Structure
 /***********************
 ******* General ********
 ***********************/
+.sticky {
+
+}
+.gallery-caption {
+
+}
+.bypostauthor {
+
+}
 body {
 	overflow: hidden;
 	color: #536d76;
